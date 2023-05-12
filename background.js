@@ -3,9 +3,9 @@ chrome.action.onClicked.addListener(async () => {
     const { active } = await chrome.storage.local.get('active');
 
     const message = { active };
-    const icon = active ? 'icons/not-active.png' : 'icons/active.png';
+    const icon = active ? "icons/not-active.png" : "icons/active.png";
 
-    if (tab.url.includes('chrome://')) return;
+    if (tab.url.includes("chrome://")) return;
     await chrome.tabs.sendMessage(tab.id, message);
     await chrome.action.setIcon({ path: icon });
 });
