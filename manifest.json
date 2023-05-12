@@ -6,7 +6,7 @@
   "description": "Storybook outlines in a chrome extension.",
   "homepage_url": "https://github.com/Lewwiss",
   "icons": {
-    "128": "icons/active.png"
+    "128": "icons/not-active.png"
   },
   "action": {},
   "content_scripts": [{
